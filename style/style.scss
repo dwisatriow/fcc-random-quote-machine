@@ -1,0 +1,130 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    height: 100vh;
+
+    background-image: linear-gradient(rgba(106, 132, 154, 0.5), rgba(106, 132, 154, 0.5)), url("../images/janko-ferlic-sfL_QOnmy00-unsplash.jpg");
+    background-size: cover;
+    background-position: 50% -159px;
+
+    #quote-box {
+        position: relative;
+        width: 650px;
+        height: auto;
+        padding: 15px 35px 20px 35px;
+        max-height: 473px;
+
+        background: rgba(175, 192, 208, 0.5);
+        border-radius: 10px;
+
+        h1 {
+            width: 220px;
+            height: 60px;
+            margin-bottom: 17px;
+
+            font-family: Caveat, cursive;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 48px;
+            line-height: 60px;
+
+            color: #243742;
+        }
+
+        #text {
+            width: 546px;
+            height: auto;
+            margin-bottom: 17px;
+            max-height: 200px;
+            // overflow: scroll;
+
+            font-family: "Slabo 27px", serif;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 24px;
+            line-height: 29px;
+
+            color: #243742;
+        }
+
+        #author {
+            width: auto;
+            height: 27px;
+            margin-bottom: 46px;
+
+            font-family: "Slabo 27px", serif;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 22px;
+            line-height: 27px;
+
+            color: #243742;
+        }
+
+        #buttons {
+            display: flex;
+            justify-content: space-between;
+            
+            #tweet-quote {
+                display: flex;
+                align-items: center;
+                
+                width: 136px;
+                height: 40px;
+                padding: 12px;
+                
+                font-family: Caveat, cursive;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 22px;
+                line-height: 28px;
+                
+                color: #AFC0D0;
+                
+                background: rgba(45, 68, 82, 0.9);
+                border-radius: 5px;
+                
+                #twitter-icon {
+                    margin-right: 4px;
+                }
+            }
+
+            #new-quote {
+                display: flex;
+                align-items: center;
+                padding: 12px;
+
+                width: 139px;
+                height: 40px;
+                border: none;
+
+                font-family: Caveat, cursive;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 22px;
+                line-height: 28px;
+                
+                color: #AFC0D0;
+                
+                background: rgba(45, 68, 82, 0.9);
+                border-radius: 5px;
+
+                #reload-icon {
+                    margin-right: 6px;
+                }
+            }
+        }
+    }
+
+    footer {
+
+    }
+}
