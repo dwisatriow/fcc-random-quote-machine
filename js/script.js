@@ -25,7 +25,7 @@ let getQuoteIndex = () => {
 };
 
 let index = getQuoteIndex();
-let tweetIntentURL = "https://twitter.com/intent/tweet?hashtags=quotes&related=freecodecamp&text=";
+let tweetIntentURL = "https://twitter.com/intent/tweet?hashtags=Quran&related=freecodecamp&text=";
 
 $(document).ready(function () {
     $("#text").text(quotes[index].text);
