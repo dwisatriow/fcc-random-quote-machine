@@ -1,10 +1,10 @@
 let quotes = [
     {
-        text: "This is the Book about which there is no doubt, a guidance for those conscious of Allah",
+        text: `"This is the Book about which there is no doubt, a guidance for those conscious of Allah"`,
         author: "God in the Quran 2 : 2"
     },
     {
-        text: "Every soul will taste death, and you will only be given your [full] compensation on the Day of Resurrection",
+        text: `"Every soul will taste death, and you will only be given your [full] compensation on the Day of Resurrection"`,
         author: "God in the Quran 3 : 185"
     }
 ];
