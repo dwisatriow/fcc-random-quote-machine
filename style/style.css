@@ -36,7 +36,7 @@ body #quote-box {
 }
 
 body #quote-box h1 {
-  width: 220px;
+  width: auto;
   height: 60px;
   margin-bottom: 17px;
   font-family: Caveat, cursive;
