@@ -30,6 +30,7 @@ let tweetIntentURL = "https://twitter.com/intent/tweet?hashtags=Quran&related=fr
 $(document).ready(function () {
     $("#text").text(quotes[index].text);
     $("#author").text("- " + quotes[index].author);
+    $("#tweet-quote").attr("href", tweetIntentURL+(quotes[index].text)+" - "+(quotes[index].author));
 
     $("#new-quote").on("click", function () {
         index = getQuoteIndex();
