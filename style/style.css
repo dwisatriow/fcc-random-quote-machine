@@ -163,6 +163,20 @@ body footer #profile-link {
   width: 104px;
 }
 
+body footer #profile-link a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #BBCFDD;
+}
+
+body footer #profile-link a:hover {
+  color: #9eafbb;
+}
+
 body footer #profile-link #codepen-icon {
   width: 28px;
   height: 28px;
