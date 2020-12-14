@@ -26,7 +26,6 @@ body {
 
 body #quote-box {
   position: relative;
-  width: 650px;
   height: auto;
   padding: 15px 35px 20px 35px;
   max-height: 473px;
@@ -38,39 +37,109 @@ body #quote-box {
 body #quote-box h1 {
   width: auto;
   height: 60px;
-  margin-bottom: 17px;
+  margin-bottom: 13px;
   font-family: Caveat, cursive;
   font-style: normal;
   font-weight: bold;
-  font-size: 48px;
+  font-size: 36px;
   line-height: 60px;
   color: #243742;
 }
 
+@media (min-width: 576px) {
+  body #quote-box h1 {
+    margin-bottom: 15px;
+  }
+}
+
+@media (min-width: 768px) {
+  body #quote-box h1 {
+    margin-bottom: 17px;
+  }
+}
+
+@media (min-width: 576px) {
+  body #quote-box h1 {
+    font-size: 44px;
+  }
+}
+
+@media (min-width: 768px) {
+  body #quote-box h1 {
+    font-size: 48px;
+  }
+}
+
 body #quote-box #text {
-  width: 546px;
-  height: auto;
-  margin-bottom: 17px;
+  margin-bottom: 13px;
   max-height: 200px;
   font-family: "Slabo 27px", serif;
   font-style: normal;
   font-weight: normal;
-  font-size: 24px;
+  font-size: 20px;
   line-height: 29px;
   color: #243742;
+}
+
+@media (min-width: 576px) {
+  body #quote-box #text {
+    margin-bottom: 15px;
+  }
+}
+
+@media (min-width: 768px) {
+  body #quote-box #text {
+    margin-bottom: 17px;
+  }
+}
+
+@media (min-width: 576px) {
+  body #quote-box #text {
+    font-size: 22px;
+  }
+}
+
+@media (min-width: 768px) {
+  body #quote-box #text {
+    font-size: 24px;
+  }
 }
 
 body #quote-box #author {
   width: 100%;
   height: 27px;
-  margin-bottom: 46px;
+  margin-bottom: 20px;
   text-align: right;
   font-family: "Slabo 27px", serif;
   font-style: normal;
   font-weight: normal;
-  font-size: 22px;
+  font-size: 18px;
   line-height: 27px;
   color: #243742;
+}
+
+@media (min-width: 576px) {
+  body #quote-box #author {
+    margin-bottom: 24px;
+  }
+}
+
+@media (min-width: 768px) {
+  body #quote-box #author {
+    margin-bottom: 28px;
+  }
+}
+
+@media (min-width: 576px) {
+  body #quote-box #author {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 768px) {
+  body #quote-box #author {
+    font-size: 22px;
+  }
 }
 
 body #quote-box #buttons {
@@ -82,6 +151,22 @@ body #quote-box #buttons {
           justify-content: space-between;
 }
 
+@media (max-width: 576px) {
+  body #quote-box #buttons {
+    height: 86px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
 body #quote-box #buttons #tweet-quote {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -89,17 +174,32 @@ body #quote-box #buttons #tweet-quote {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   width: 136px;
   height: 40px;
   padding: 12px;
   font-family: Caveat, cursive;
   font-style: normal;
   font-weight: bold;
-  font-size: 22px;
+  font-size: 18px;
   line-height: 28px;
   color: #AFC0D0;
   background: rgba(45, 68, 82, 0.9);
   border-radius: 5px;
+}
+
+@media (min-width: 576px) {
+  body #quote-box #buttons #tweet-quote {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 768px) {
+  body #quote-box #buttons #tweet-quote {
+    font-size: 22px;
+  }
 }
 
 body #quote-box #buttons #tweet-quote #twitter-icon {
@@ -113,18 +213,33 @@ body #quote-box #buttons #new-quote {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 12px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   width: 139px;
   height: 40px;
+  padding: 12px;
   border: none;
   font-family: Caveat, cursive;
   font-style: normal;
   font-weight: bold;
-  font-size: 22px;
+  font-size: 18px;
   line-height: 28px;
   color: #AFC0D0;
   background: rgba(45, 68, 82, 0.9);
   border-radius: 5px;
+}
+
+@media (min-width: 576px) {
+  body #quote-box #buttons #new-quote {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 768px) {
+  body #quote-box #buttons #new-quote {
+    font-size: 22px;
+  }
 }
 
 body #quote-box #buttons #new-quote #reload-icon {
@@ -132,8 +247,6 @@ body #quote-box #buttons #new-quote #reload-icon {
 }
 
 body footer {
-  position: absolute;
-  bottom: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -196,7 +309,19 @@ body footer p {
   font-family: "Patrick Hand", cursive;
   font-style: normal;
   font-weight: normal;
-  font-size: 24px;
+  font-size: 18px;
   line-height: 32px;
+}
+
+@media (min-width: 576px) {
+  body footer p {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 768px) {
+  body footer p {
+    font-size: 22px;
+  }
 }
 /*# sourceMappingURL=style.css.map */

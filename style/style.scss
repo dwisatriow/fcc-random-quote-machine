@@ -3,6 +3,12 @@
     padding: 0px;
 }
 
+$breakpoint-xs: 575px;
+$breakpoint-sm: 576px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 992px;
+$breakpoint-xl: 1200px;
+
 body {
     display: flex;
     flex-direction: column;
@@ -17,7 +23,7 @@ body {
 
     #quote-box {
         position: relative;
-        width: 650px;
+        // width: 650px;
         height: auto;
         padding: 15px 35px 20px 35px;
         max-height: 473px;
@@ -29,28 +35,36 @@ body {
         h1 {
             width: auto;
             height: 60px;
-            margin-bottom: 17px;
+            margin-bottom: 13px;
+            @media (min-width: $breakpoint-sm) { margin-bottom: 15px; }
+            @media (min-width: $breakpoint-md) { margin-bottom: 17px; }
 
             font-family: Caveat, cursive;
             font-style: normal;
             font-weight: bold;
-            font-size: 48px;
+            font-size: 36px;
+            @media (min-width: $breakpoint-sm) { font-size: 44px; }
+            @media (min-width: $breakpoint-md) { font-size: 48px; }
             line-height: 60px;
 
             color: #243742;
         }
 
         #text {
-            width: 546px;
-            height: auto;
-            margin-bottom: 17px;
+            // width: 546px;
+            // height: auto;
+            margin-bottom: 13px;
+            @media (min-width: $breakpoint-sm) { margin-bottom: 15px; }
+            @media (min-width: $breakpoint-md) { margin-bottom: 17px; }
             max-height: 200px;
             // overflow: scroll;
 
             font-family: "Slabo 27px", serif;
             font-style: normal;
             font-weight: normal;
-            font-size: 24px;
+            font-size: 20px;
+            @media (min-width: $breakpoint-sm) { font-size: 22px; }
+            @media (min-width: $breakpoint-md) { font-size: 24px; }
             line-height: 29px;
 
             color: #243742;
@@ -59,13 +73,17 @@ body {
         #author {
             width: 100%;
             height: 27px;
-            margin-bottom: 46px;
+            margin-bottom: 20px;
+            @media (min-width: $breakpoint-sm) { margin-bottom: 24px; }
+            @media (min-width: $breakpoint-md) { margin-bottom: 28px; }
             text-align: right;
 
             font-family: "Slabo 27px", serif;
             font-style: normal;
             font-weight: normal;
-            font-size: 22px;
+            font-size: 18px;
+            @media (min-width: $breakpoint-sm) { font-size: 20px; }
+            @media (min-width: $breakpoint-md) { font-size: 22px; }
             line-height: 27px;
 
             color: #243742;
@@ -74,19 +92,31 @@ body {
         #buttons {
             display: flex;
             justify-content: space-between;
+            @media (max-width: $breakpoint-sm) {
+                height: 86px;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: center;
+            }
             
             #tweet-quote {
                 display: flex;
                 align-items: center;
+                justify-content: center;
                 
                 width: 136px;
+                // @media (max-width: $breakpoint-sm) {
+                //     width: 200px;
+                // }
                 height: 40px;
                 padding: 12px;
                 
                 font-family: Caveat, cursive;
                 font-style: normal;
                 font-weight: bold;
-                font-size: 22px;
+                font-size: 18px;
+                @media (min-width: $breakpoint-sm) { font-size: 20px; }
+                @media (min-width: $breakpoint-md) { font-size: 22px; }
                 line-height: 28px;
                 
                 color: #AFC0D0;
@@ -102,16 +132,22 @@ body {
             #new-quote {
                 display: flex;
                 align-items: center;
-                padding: 12px;
+                justify-content: center;
 
                 width: 139px;
+                // @media (max-width: $breakpoint-sm) {
+                //     width: 200px;
+                // }
                 height: 40px;
+                padding: 12px;
                 border: none;
 
                 font-family: Caveat, cursive;
                 font-style: normal;
                 font-weight: bold;
-                font-size: 22px;
+                font-size: 18px;
+                @media (min-width: $breakpoint-sm) { font-size: 20px; }
+                @media (min-width: $breakpoint-md) { font-size: 22px; }
                 line-height: 28px;
                 
                 color: #AFC0D0;
@@ -127,9 +163,6 @@ body {
     }
 
     footer {
-        position: absolute;
-        bottom: 0;
-
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -174,7 +207,9 @@ body {
             font-family: "Patrick Hand", cursive;
             font-style: normal;
             font-weight: normal;
-            font-size: 24px;
+            font-size: 18px;
+            @media (min-width: $breakpoint-sm) { font-size: 20px; }
+            @media (min-width: $breakpoint-md) { font-size: 22px; }
             line-height: 32px;
         }
     }
