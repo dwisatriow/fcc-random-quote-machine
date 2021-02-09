@@ -11,17 +11,17 @@ let quotes = [
     },
     {
         id: "3",
-        text: "Or were they created by nothing, or were they the creators [of themselves]?",
+        text: '"Or were they created by nothing, or were they the creators [of themselves]?"',
         author: "God in the Quran 52 : 35"
     },
     {
         id: "4",
-        text: "Do they not then reflect on the Quran? Had it been from anyone other than Allah, they would have certainly found in it many inconsistencies",
+        text: '"Do they not then reflect on the Quran? Had it been from anyone other than Allah, they would have certainly found in it many inconsistencies"',
         author: "God in the Quran 4 : 82"
     },
     {
         id: "5",
-        text: "And He is the One Who originates the creation then will resurrect it—which is even easier for Him. To Him belong the finest attributes in the heavens and the earth. And He is the Almighty, All-Wise",
+        text: '"And He is the One Who originates the creation then will resurrect it—which is even easier for Him. To Him belong the finest attributes in the heavens and the earth. And He is the Almighty, All-Wise"',
         author: "God in the Quran 30 : 27"
     }
 ];

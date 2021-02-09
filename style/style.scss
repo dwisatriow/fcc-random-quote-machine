@@ -96,7 +96,7 @@ body {
                 height: 86px;
                 flex-direction: column;
                 justify-content: space-between;
-                align-items: center;
+                align-items: flex-end;
             }
             
             #tweet-quote {
@@ -104,12 +104,12 @@ body {
                 align-items: center;
                 justify-content: center;
                 
-                width: 136px;
+                width: 139px;
                 // @media (max-width: $breakpoint-sm) {
                 //     width: 200px;
                 // }
                 height: 40px;
-                padding: 12px;
+                padding: 12px 13.5px;
                 
                 font-family: Caveat, cursive;
                 font-style: normal;
