@@ -15,7 +15,7 @@ body {
     justify-content: center;
     align-items: center;
 
-    height: 100vh;
+    min-height: 100vh;
 
     background-image: linear-gradient(rgba(106, 132, 154, 0.5), rgba(106, 132, 154, 0.5)), url("../images/janko-ferlic-sfL_QOnmy00-unsplash.jpg");
     background-size: cover;
